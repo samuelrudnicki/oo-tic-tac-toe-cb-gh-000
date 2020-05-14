@@ -59,7 +59,7 @@ class TicTacToe
     end
   end
 
-  def won?(board)
+  def won?
     WIN_COMBINATIONS.find { |combination|
       (combination.all? { |index|
         position_taken?(index) && @board[index] == "X"  }) || (combination.all? { |index|
