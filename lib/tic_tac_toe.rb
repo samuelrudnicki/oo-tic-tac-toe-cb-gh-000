@@ -10,7 +10,7 @@ class TicTacToe
                       [0,4,8], #primary diagonal
                       [2,4,6]  #secondary diagonal
                     ]
-                    
+
   def initialize
     @board = Array.new(" ", 9)
   end
@@ -22,6 +22,5 @@ class TicTacToe
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
-  
+
 end
-  
