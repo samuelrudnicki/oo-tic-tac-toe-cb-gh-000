@@ -66,4 +66,22 @@ class TicTacToe
           position_taken?(index) && @board[index] == "O"  })
     }
   end
+
+  def full?
+    board.all? do |position|
+      !(position.nil? || position == " ")
+    end
+  end
+
+  def draw?
+    !won? && full?
+  end
+
+  def over?
+     draw? || won?
+  end
+
+  def winner
+    over? && won? ? @board[won?[0]] : nil
+  end
 end
