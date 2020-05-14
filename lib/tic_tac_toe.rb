@@ -10,8 +10,18 @@ class TicTacToe
                       [0,4,8], #primary diagonal
                       [2,4,6]  #secondary diagonal
                     ]
+                    
   def initialize
-  @board = Array.new(" ", 9)
+    @board = Array.new(" ", 9)
   end
+
+  def display_board
+    puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
+    puts "-----------"
+    puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
+    puts "-----------"
+    puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
+  end
+  
 end
   
