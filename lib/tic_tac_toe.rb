@@ -85,7 +85,7 @@ class TicTacToe
     over? && won? ? @board[won?[0]] : nil
   end
 
-  def play(board)
+  def play
     until over?
       turn
     end
